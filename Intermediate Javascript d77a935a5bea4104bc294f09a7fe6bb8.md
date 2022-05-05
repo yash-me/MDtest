@@ -304,13 +304,13 @@ JavaScript's class system is built directly on using functions and objects. Call
 
 As it turns out, when invoking a constructor function with the `new` operator, `this` gets set to the *newly-created object*! 
 
-### ****When is `this` Assigned?**
+### **When is `this` Assigned?**
 
 A common misconception is that `this` refers to the object *where it is defined*. This is not the case!
 
 The value of `this` is actually not assigned to anything until an object calls the method where `this` is used. In other words, the value assigned to `this` is based on *the object that invokes the method where `this` is defined*.
 
-### ****What Does `this` Get Set To?**
+### **What Does `this` Get Set To?**
 
 At this point, we've seen `this` in many different contexts, such as within a method, or referenced by a constructor function. Let's now organize our thoughts and bring it all together!
 
