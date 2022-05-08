@@ -4,7 +4,7 @@
 
 # **First-Class Functions**
 
-In JavaScript, functions are *first-class* functions. This means that you can do with a *function* just about anything that you can do with other elements, such as numbers, strings, objects, arrays, etc. JavaScript functions can:
+In JavaScript, functions are *first-class* functions. This means that you can do with a *function* just about anything that you can do with other elements, such as numbers, strings, objects, arrays,  etc. JavaScript functions can:
 
 1. Be stored in variables
 2. Be returned from a function.
@@ -31,6 +31,11 @@ function alertThenReturn() {
 # **Callback Functions**
 
 A function that takes other functions as arguments (and/or *returns* a function, as we learned in the previous section) is known as a **higher-order function.** A function that is passed as an argument into another function is called a **callback** function.
+
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/watch?v=X7WK5mTE75k">
+</iframe>
 
 [https://www.youtube.com/watch?v=X7WK5mTE75k](https://www.youtube.com/watch?v=X7WK5mTE75k)
 
