@@ -28,9 +28,11 @@ function alertThenReturn() {
 }
 ```
 
-# ****Callback Functions****
+# **Callback Functions**
 
 A function that takes other functions as arguments (and/or *returns* a function, as we learned in the previous section) is known as a **higher-order function.** A function that is passed as an argument into another function is called a **callback** function.
+
+[https://www.youtube.com/watch?v=X7WK5mTE75k](https://www.youtube.com/watch?v=X7WK5mTE75k)
 
 # Scope
 
@@ -56,7 +58,7 @@ This is all because variables in JavaScript are traditionally defined in the sco
 
 Whenever your code attempts to access a variable during a function call, the JavaScript interpreter will always start off by looking within its own local variables. If the variable isn't found, the search will continue looking up what is called the **scope chain**.
 
-![Screenshot 2022-04-03 at 10.18.38 AM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-03_at_10.18.38_AM.png)
+![Screenshot 2022-04-03 at 10.18.38 AM.png](Screenshot_2022-04-03_at_10.18.38_AM.png)
 
 ### **Variable Shadowing**
 
@@ -90,15 +92,15 @@ In the below code example, after function declaration, still invoking result giv
 
 As function logger forms a closure -
 
-![Screenshot 2022-04-03 at 10.27.07 AM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-03_at_10.27.07_AM.png)
+![Screenshot 2022-04-03 at 10.27.07 AM.png](Screenshot_2022-04-03_at_10.27.07_AM.png)
 
 Another Example - 
 
-![Screenshot 2022-04-03 at 10.28.50 AM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-03_at_10.28.50_AM.png)
+![Screenshot 2022-04-03 at 10.28.50 AM.png](Screenshot_2022-04-03_at_10.28.50_AM.png)
 
 As we can see below count is not available, so closure helps to create private state too
 
-![Screenshot 2022-04-03 at 10.29.03 AM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-03_at_10.29.03_AM.png)
+![Screenshot 2022-04-03 at 10.29.03 AM.png](Screenshot_2022-04-03_at_10.29.03_AM.png)
 
 ### **Garbage Collection**
 
@@ -161,7 +163,7 @@ An immediately-invoked function expression, or IIFE (pronounced *iffy*
 // alerts 'Hi there!'
 ```
 
-### ****IIFE's and Private Scope****
+### **IIFE's and Private Scope**
 
 One of the primary uses for IIFE's is to create *private scope*
  (i.e., private state). Recall that variables in JavaScript are traditionally scoped to a function. Knowing this, we can leverage the behavior of closures to protect variables or methods from being accessed! Consider the following example of a simple closure within an IIFE, referenced by `myFunction`:
@@ -177,7 +179,7 @@ const myFunction = (
 )();
 ```
 
-![Screenshot 2022-04-03 at 7.41.17 AM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-03_at_7.41.17_AM.png)
+![Screenshot 2022-04-03 at 7.41.17 AM.png](Screenshot_2022-04-03_at_7.41.17_AM.png)
 
 ### ****IIFE's, Private Scope, and Event Handling****
 
@@ -251,7 +253,7 @@ function SoftwareDeveloper() {
 let developer = new SoftwareDeveloper();
 ```
 
-![Screenshot 2022-04-03 at 6.26.44 PM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-03_at_6.26.44_PM.png)
+![Screenshot 2022-04-03 at 6.26.44 PM.png](Screenshot_2022-04-03_at_6.26.44_PM.png)
 
 ****Creating Multiple Objects****
 
@@ -304,13 +306,13 @@ JavaScript's class system is built directly on using functions and objects. Call
 
 As it turns out, when invoking a constructor function with the `new` operator, `this` gets set to the *newly-created object*! 
 
-### **When is `this` Assigned?**
+### ****When is `this` Assigned?**
 
 A common misconception is that `this` refers to the object *where it is defined*. This is not the case!
 
 The value of `this` is actually not assigned to anything until an object calls the method where `this` is used. In other words, the value assigned to `this` is based on *the object that invokes the method where `this` is defined*.
 
-### **What Does `this` Get Set To?**
+### ****What Does `this` Get Set To?**
 
 At this point, we've seen `this` in many different contexts, such as within a method, or referenced by a constructor function. Let's now organize our thoughts and bring it all together!
 
@@ -358,7 +360,7 @@ funFunction();
 
 The fourth way to call functions allows us to set `this` ourselves! Don't worry about this approach for now; we'll take a deep dive in the very next section.
 
-![Screenshot 2022-04-03 at 6.47.08 PM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-03_at_6.47.08_PM.png)
+![Screenshot 2022-04-03 at 6.47.08 PM.png](Screenshot_2022-04-03_at_6.47.08_PM.png)
 
 ### **Summary**
 
@@ -430,7 +432,7 @@ Both `call()` and `apply()` invoke a function in the scope of the first argu
 
 The value of `this` has some potential scope issues when *callback functions* are involved, and things can get a bit tricky. Let's check it out below and see age doesn’t chaged-
 
-![Screenshot 2022-04-05 at 10.28.39 AM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-05_at_10.28.39_AM.png)
+![Screenshot 2022-04-05 at 10.28.39 AM.png](Screenshot_2022-04-05_at_10.28.39_AM.png)
 
 ### ****Saving `this` with an Anonymous Closure**
 
@@ -468,7 +470,7 @@ dog.age;
 Similar to `call()` and `apply()`, the `bind()`method allows us to directly define a value for `this`. `bind()` is a method that is also called _on_ a function, but unlike `call()`
  or `apply()`, which both invoke the function right away -- `bind()`*returns* a new function that, when called, has `this`set to the value we give it.
 
-![Screenshot 2022-04-05 at 10.23.13 AM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-05_at_10.23.13_AM.png)
+![Screenshot 2022-04-05 at 10.23.13 AM.png](Screenshot_2022-04-05_at_10.23.13_AM.png)
 
 ### ****Summary****
 
@@ -510,7 +512,7 @@ JavaScript leverages this secret link -- between an object and its prototype -- 
 
 Previously, we simply defined methods directly in a constructor function itself. Let's see how things look if we defined methods in the constructor's `prototype` instead!
 
-![Screenshot 2022-04-07 at 3.04.35 PM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-07_at_3.04.35_PM.png)
+![Screenshot 2022-04-07 at 3.04.35 PM.png](Screenshot_2022-04-07_at_3.04.35_PM.png)
 
 ****💡 Replacing the `prototype` Object 💡**
 
@@ -762,7 +764,7 @@ console.log(rabbit.earBones);
 
 ### ****An Object is Prototype-linked to a Single Object****
 
-![Screenshot 2022-04-07 at 4.47.37 PM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-07_at_4.47.37_PM.png)
+![Screenshot 2022-04-07 at 4.47.37 PM.png](Screenshot_2022-04-07_at_4.47.37_PM.png)
 
 ### ****Mixins****
 
@@ -834,7 +836,7 @@ console.log(orangeBasketball);
 // { color: 'orange', numDots: 35000 }
 ```
 
-![Screenshot 2022-04-07 at 5.01.20 PM.png](Intermediate%20Javascript%20d77a935a5bea4104bc294f09a7fe6bb8/Screenshot_2022-04-07_at_5.01.20_PM.png)
+![Screenshot 2022-04-07 at 5.01.20 PM.png](Screenshot_2022-04-07_at_5.01.20_PM.png)
 
 ### ****Functional Mixins****
 
