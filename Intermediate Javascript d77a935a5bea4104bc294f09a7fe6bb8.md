@@ -281,11 +281,11 @@ console.log(instructor);
 // SoftwareDeveloper { favoriteLanguage: 'JavaScript', name: 'Andrew' }
 ```
 
-<aside>
+
+```jsx
 📢 ⚠️ **Omitting the `new` Operator** ⚠️
 What's going on? Without using the `new` operator, no object was created. The function was invoked just like any other regular function. Since the function doesn't return anything (except `undefined`, which all functions return by default), the `coder` variable ended up being assigned to `undefined`.*
-
-</aside>
+```
 
 ```jsx
 functionSoftwareDeveloper(name) {
