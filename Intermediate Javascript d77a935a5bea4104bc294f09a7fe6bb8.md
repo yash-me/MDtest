@@ -123,7 +123,7 @@ function myCounter() {
 
 # **Immediately-Invoked Function Expressions (IIFE)**
 
-### ****Function Declarations vs. Function Expressions****
+### **Function Declarations vs. Function Expressions**
 
 Before we jump into **immediately-invoked function expressions** (IIFE), let's make sure we're on the same page regarding the differences between function *declarations* and function *expressions*.
 
@@ -149,7 +149,7 @@ const myFunction = function returnHello() {
 };
 ```
 
-### ****Immediately-Invoked Function Expressions: Structure and Syntax****
+### **Immediately-Invoked Function Expressions: Structure and Syntax**
 
 An immediately-invoked function expression, or IIFE (pronounced *iffy*
 ), is a function that is called immediately after it is defined. Check out the following example:
@@ -181,7 +181,7 @@ const myFunction = (
 
 ![Screenshot 2022-04-03 at 7.41.17 AM.png](Screenshot_2022-04-03_at_7.41.17_AM.png)
 
-### ****IIFE's, Private Scope, and Event Handling****
+### **IIFE's, Private Scope, and Event Handling**
 
 Let's check out another example of an immediately-invoked function expression -- this time in the context of handling an event. Say that we want to create a button on a page that alerts the user on every other click. One way to begin doing this would be to keep track of the number of times that the button was clicked. But how should we maintain this data?
 
@@ -212,7 +212,7 @@ First, we declare a local variable, `count`, which is initially set to `0`. We
 
 What is important to note is that the returned function *closes over* the `count` variable. That is, because a function maintains a reference to its parent's scope, `count` is available for the returned function to use! As a result, we immediately invoke a function that returns that function. And since the returned function has access to the internal variable, `count`, a **private scope** is created -- effectively protecting the data!
 
-### ****Benefits of Immediately-Invoked Function Expressions****
+### **Benefits of Immediately-Invoked Function Expressions**
 
 We've seen how using an immediately-invoked function expression creates a private scope that protects variables or methods from being accessed. IIFE's ultimately use the returned functions to access private data within the closure. This works out very well: while these returned functions are publicly-accessible, they still maintain privacy for the variables defined within them!
 
@@ -237,7 +237,7 @@ new SoftwareDeveloper();
 The first thing to note above is the use of the `new` keyword. Second, note that the name of the constructor function, `SoftwareDeveloper()`, is written with the first letter capitalized to *visually*
  distinguish it from a regular function.
 
-****Constructor Functions: Structure and Syntax****
+**Constructor Functions: Structure and Syntax**
 
 This is what the internals of a constructor function looks like:
 
@@ -247,7 +247,7 @@ function SoftwareDeveloper() {
 }
 ```
 
-****Creating a New Object****
+**Creating a New Object**
 
 ```jsx
 let developer = new SoftwareDeveloper();
@@ -255,7 +255,7 @@ let developer = new SoftwareDeveloper();
 
 ![Screenshot 2022-04-03 at 6.26.44 PM.png](Screenshot_2022-04-03_at_6.26.44_PM.png)
 
-****Creating Multiple Objects****
+**Creating Multiple Objects**
 
 ```jsx
 let engineer = new SoftwareDeveloper();
@@ -268,7 +268,7 @@ console.log(programmer);
 // SoftwareDeveloper { favoriteLanguage: 'JavaScript' }
 ```
 
-****Constructor Functions Can Have Parameters****
+**Constructor Functions Can Have Parameters**
 
 ```jsx
 function SoftwareDeveloper(name) {
