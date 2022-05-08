@@ -37,6 +37,9 @@ A function that takes other functions as arguments (and/or *returns* a function
 src="https://www.youtube.com/watch?v=X7WK5mTE75k">
 </iframe>
 
+
+https://user-images.githubusercontent.com/58986949/115314310-805b2780-a1a7-11eb-8558-648a367ea231.mp4
+
 [https://www.youtube.com/watch?v=X7WK5mTE75k](https://www.youtube.com/watch?v=X7WK5mTE75k)
 
 # Scope
