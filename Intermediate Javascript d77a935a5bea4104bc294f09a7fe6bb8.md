@@ -33,14 +33,8 @@ function alertThenReturn() {
 A function that takes other functions as arguments (and/or *returns* a function, as we learned in the previous section) is known as a **higher-order function.** A function that is passed as an argument into another function is called a **callback** function.
 
 
-<iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=X7WK5mTE75k">
-</iframe>
-
-
 https://user-images.githubusercontent.com/58986949/115314310-805b2780-a1a7-11eb-8558-648a367ea231.mp4
 
-[https://www.youtube.com/watch?v=X7WK5mTE75k](https://www.youtube.com/watch?v=X7WK5mTE75k)
 
 # Scope
 
