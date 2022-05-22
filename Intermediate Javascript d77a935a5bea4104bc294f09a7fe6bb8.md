@@ -20,7 +20,7 @@ hi, i'm [Abhishek Naidu](https://abhishknads.me/), a passionate self-taught full
 
 i am also an open-source enthusiast and maintainer. i learned a lot from the open-source community and i love how collaboration and knowledge sharing happened through open-source.
   
-<iframe width="620" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+<iframe width="870" height="445" src="https://www.youtube.com/embed/tgbNymZ7vqY">
 </iframe>
 
 - 💼 any freelance work? do reach, [email](mailto:abhishek.naidu@cred.club) :)
